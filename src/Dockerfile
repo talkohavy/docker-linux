@@ -1,7 +1,5 @@
 FROM node:22.16.0-alpine3.21
 
-WORKDIR "/ws-service"
+WORKDIR "/my-service"
 
-COPY apps/ws-service/dist .
-
-CMD ["node", "index.js"]
+CMD ["echo", "Hello, World!"]
