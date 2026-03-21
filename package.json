@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "docker build . -f src/Dockerfile -t docker-linux:123 -t docker-linux:latest",
-    "dev": "docker run -it --rm --name docker-linux docker-linux sh"
+    "dev": "docker run -it --rm --name docker-linux -v \"$HOME/.ssh:/root/.ssh:ro\" docker-linux sh"
   },
   "author": "",
   "license": "ISC"
